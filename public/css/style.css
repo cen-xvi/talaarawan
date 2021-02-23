@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+section {
+  margin: 0 10rem;
+}
+
+nav {
+  height: 80px;
+  background: #87d1b8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 45px;
+  color: #f5f4f4;
+  margin: 0 10rem;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+.sign-out {
+  margin: 0 10rem;
+}
+
+.header {
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+  color: #00303f;
+}
+
+.sub-header {
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 30px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80 px;
+  margin: 0, 15 px;
+}
+
+nav ul li a {
+  position: relative;
+  top: 30px;
+  color: #f5f4f4;
+  font-size: 18px;
+  padding: 5px, 0;
+  text-transform: uppercase;
+  border: 10px solid;
+  border-radius: 5px;
+  border-color: #00303f;
+  background-color: #00303f;
+}
+
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #f5f4f4;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+
+nav ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
